@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
@@ -17,6 +16,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link href="fonts/stylesheet.css" rel="stylesheet" />
     <link href="css/screen.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
@@ -25,8 +25,13 @@
     <div id="full_wrapper">
         <!-- HEADER -->
         <header>
+            <button class="navbar-toggler">
+                <span class="navbar-icon"></span>
+                <span class="navbar-icon"></span>
+                <span class="navbar-icon"></span>
+            </button>
             <div class="wrapper d_flex d_flex_jb d_flex_ac">
-                <a href="#"><img src="images/logo.svg" alt="logo"></a>
+                <a href="#" class="brand"><img src="images/logo.svg" alt="logo"></a>
                 <nav>
                     <ul class=" d_flex d_flex_jb d_flex_ac">
                         <li><a href="#" class="active">Home</a></li>
@@ -40,8 +45,8 @@
         <!---->
         <div class="main">
             <section class="banner">
-                <div class="wrapper">
-                    <div class="colin">
+                <div class="wrapper ">
+                    <div class="colin ">
                         <h1>We’re Different,<br>
                             You Should be too</h1>
                         <div class="circle">
@@ -52,14 +57,14 @@
                     <div class="text">
                         <p>We’re not your typical corporate marketing agency. We’re laid back, chill humans, who love to
                             create brands and deliver killer results.</p>
-                        <div class="lets_talk d_flex d_flex_ac">
+                        <a href="#" class="lets_talk d_flex d_flex_ac">
                             <span>Let’s Talk</span>
                             <ul class="d_flex d_flex_ac">
-                                <li><a href="#"><img src="images/img1.png" alt="img1"></a></li>
-                                <li><a href="#"><img src="images/img2.png" alt="img2"></a></li>
-                                <li><a href="#"><img src="images/img3.png" alt="img3"></a></li>
+                                <li><span><img src="images/img1.png" alt="img1"></span></li>
+                                <li><span><img src="images/img2.png" alt="img2"></span></li>
+                                <li><span><img src="images/img3.png" alt="img3"></span></li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                     <div class="banner_image">
                         <div class="bg" style="background-image: url(./images/animate_img.jpg);">
@@ -91,7 +96,7 @@
             </section>
             <section class="paid_ads">
                 <div class="wrapper">
-                    <div class="title">
+                    <div class="title animation_sec">
                         <div class="icon_img d_flex d_flex_ac d_flex_jc"><img src="images/paid_ads.svg" alt="paid_ads">
                             <h2>Paid Ads</h2>
                         </div>
@@ -141,7 +146,7 @@
             </section>
             <section class="email_marketing">
                 <div class="wrapper">
-                    <div class="title">
+                    <div class="title animation_sec">
                         <div class="icon_img d_flex d_flex_ac d_flex_jc"><img src="images/email_marketing.svg"
                                 alt="paid_ads">
                             <h2>Email Marketing</h2>
@@ -159,7 +164,7 @@
             </section>
             <section class="ecommerce">
                 <div class="wrapper">
-                    <div class="title">
+                    <div class="title animation_sec">
                         <div class="icon_img d_flex d_flex_ac d_flex_jc"><img src="images/email_marketing.svg"
                                 alt="paid_ads">
                             <h2>ecommerce</h2>
@@ -173,26 +178,26 @@
             </section>
             <section class="team_extension">
                 <div class="wrapper">
-                    <div class="col">
-                        <img src="images/b-brand.svg" class="b_brand" alt="b-brand">
+                    <div class="col animation_sec">
+                        <img src="images/b-brand.png" class="b_brand" alt="b-brand">
                         <h2>We're an extension
                             of your team.</h2>
                         <p>Think of us as an extension of your team. If you succeed, so do we. Our team works night and
                             day to ensure you get the results you want. Everything is carefully planned out and
                             strategized to make sure your brand scales profitably.</p>
-                        <div class="lets_talk d_flex d_flex_ac">
+                        <a href="#" class="lets_talk d_flex d_flex_ac">
                             <span>Schedule A Call</span>
                             <ul class="d_flex d_flex_ac">
-                                <li><a href="#"><img src="images/img1.png" alt="img1"></a></li>
-                                <li><a href="#"><img src="images/img2.png" alt="img2"></a></li>
-                                <li><a href="#"><img src="images/img3.png" alt="img3"></a></li>
+                                <li><span><img src="images/img1.png" alt="img1"></span></li>
+                                <li><span><img src="images/img2.png" alt="img2"></span></li>
+                                <li><span><img src="images/img3.png" alt="img3"></span></li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
-                    <img src="images/man.png" class="man" alt="man">
+                    <img src="images/man.png" class="man animation_sec" alt="man">
                 </div>
             </section>
-            <section class="affordable">
+            <section class="affordable animation_sec">
                 <div class="wrapper">
                     <h2>Affordable Outsourced Marketing</h2>
                 </div>
@@ -201,7 +206,7 @@
                 <div class="trusted_by">
                     <div class="wrapper">
                         <h2>Trusted By</h2>
-                        <div class="inner d_flex d_flex_jb">
+                        <div class="inner d_flex d_flex_jb animation_sec">
                             <div class="col" style="background-image: url(./images/ss1.png);">
                                 <div class="bg"><img src="images/logo1.svg" alt="logo1"></div>
                             </div>
@@ -369,10 +374,10 @@
             <section class="social_media">
                 <div class="bg" style="background-image: url(./images/social_image.jpg);"></div>
                 <div class="wrapper d_flex d_flex_jb">
-                    <div class="left_col">
+                    <div class="left_col animation_sec">
                         <h2>Increase Visibility On Facebook And Other Social Media Platforms</h2>
                     </div>
-                    <div class="right_col">
+                    <div class="right_col animation_sec">
                         <p>One of the biggest mistakes retailers make is handling their own
                             social media accounts. the amount of time social media takes up
                             will slow down your business, rather than assist your growth. leave
@@ -381,18 +386,18 @@
                             to them rather than talking about what is important to the customer. We get to see both
                             sides of this equation.</p>
                         <p>Bundle Content Creation and Social Media Management at a discounted rate?</p>
-                        <div class="lets_talk d_flex d_flex_ac">
+                        <a href="#" class="lets_talk d_flex d_flex_ac">
                             <span>Schedule A Call</span>
                             <ul class="d_flex d_flex_ac">
-                                <li><a href="#"><img src="images/img1.png" alt="img1"></a></li>
-                                <li><a href="#"><img src="images/img2.png" alt="img2"></a></li>
-                                <li><a href="#"><img src="images/img3.png" alt="img3"></a></li>
+                                <li><span><img src="images/img1.png" alt="img1"></span></li>
+                                <li><span><img src="images/img2.png" alt="img2"></span></li>
+                                <li><span><img src="images/img3.png" alt="img3"></span></li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
-            <section class="emailsec">
+            <section class="emailsec animation_sec">
                 <div class="wrapper d_flex d_flex_jb">
                     <div class="left_col">
                         <h2>Let's start
@@ -405,14 +410,14 @@
                             <em>Email Us</em>
                             <span>drew@banchmarketing.com</span>
                         </a>
-                        <div class="lets_talk d_flex d_flex_ac">
+                        <a href="" class="lets_talk d_flex d_flex_ac">
                             <span>Contact Us</span>
                             <ul class="d_flex d_flex_ac">
-                                <li><a href="#"><img src="images/img1.png" alt="img1"></a></li>
-                                <li><a href="#"><img src="images/img2.png" alt="img2"></a></li>
-                                <li><a href="#"><img src="images/img3.png" alt="img3"></a></li>
+                                <li><span><img src="images/img1.png" alt="img1"></span></li>
+                                <li><span><img src="images/img2.png" alt="img2"></span></li>
+                                <li><span><img src="images/img3.png" alt="img3"></span></li>
                             </ul>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -431,19 +436,20 @@
                     <li><a href="#">Services</a></li>
                 </ul>
                 <div class="let_blog">
-                    <div class="lets_talk d_flex d_flex_ac">
+                    <a href="#" class="lets_talk d_flex d_flex_ac">
                         <span>Let’s Talk</span>
                         <ul class="d_flex d_flex_ac">
-                            <li><a href="#"><img src="images/img1.png" alt="img1"></a></li>
-                            <li><a href="#"><img src="images/img2.png" alt="img2"></a></li>
-                            <li><a href="#"><img src="images/img3.png" alt="img3"></a></li>
+                            <li><span><img src="images/img1.png" alt="img1"></span></li>
+                            <li><span><img src="images/img2.png" alt="img2"></span></li>
+                            <li><span><img src="images/img3.png" alt="img3"></span></li>
                         </ul>
-                    </div>
-                    <img src="images/pertner.svg" alt="">
+                    </a>
+                    <a href="#"><img src="images/pertner.png" alt=""></a>
                 </div>
-                <div class="rr_footer">
-                    <img src="images/rr_footer.svg" alt="">
-                </div>
+                
+        </div>
+        <div class="rr_footer">
+            <img src="images/rr_footer1.svg" alt="">
         </div>
         <div class="bottom_footer">
             <div class="wrapper d_flex d_flex_jb d_flex_ac">

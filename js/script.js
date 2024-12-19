@@ -1,8 +1,42 @@
-// jQuery(window).on('load', function() {
-
-// });
+jQuery(window).on('load', function() {
+  setTimeout(function() {
+    jQuery('.banner .animation_sec').addClass('come-in');
+    setTimeout(function() {
+      jQuery('.countdown.animation_sec').addClass('come-in');
+    }, 300); // Delay for the second animation
+  }, 300); // Initial delay before first animation
+});
 
 jQuery(document).ready(function($){
+
+  $('header ul li a,footer .bottom_footer ul li a').each(function() {
+    var _this = $(this); // Store the jQuery object
+    var currentWidth = _this.width(); // Get the width of the element
+    console.log(currentWidth);
+    var newWidth = currentWidth + 6; // Add 5 to the current width
+    _this.css('width', newWidth + 'px'); // Set the new width
+});
+
+  let lastScrollTop = 0; // Keep track of the last scroll position
+
+      $(window).on("scroll", function () {
+        let currentScroll = $(this).scrollTop(); // Get the current scroll position
+
+        if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          $("header").addClass("hidden");
+        } else {
+          // Scrolling up
+          $("header").removeClass("hidden");
+        }
+
+        lastScrollTop = currentScroll; // Update the last scroll position
+      });
+
+  $('header .navbar-toggler').click(function(){
+    $(this).toggleClass('active');
+    $('header nav').toggleClass('active');
+  });
 
     /* megnify */
     $('[data-pop="megnify"]').each(function(){
@@ -25,6 +59,35 @@ jQuery(document).ready(function($){
       });
   });
 /* megnify */
+
+(function($)
+ {
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          bottom       = _top + $t.height(),
+          compareTop    = partial === true ? bottom : _top,
+          compareBottom = partial === true ? _top : bottom;
+
+      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+  };
+})(jQuery);
+var win = $(window);
+var allMods = $(".animation_sec,footer");
+win.scroll(function(event) {
+  allMods.each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+          setTimeout(function(){
+              el.addClass("come-in"); 
+          },i*50);
+      } 
+  });
+});
 
  // Function to pause all videos
     function pauseAllVideos() {
@@ -69,6 +132,7 @@ $(window).scroll(function(){
   else sticky.removeClass('fixed');
 });
 
+if($(window).width() > 767){
 
 /* banner aniamtion */
 gsap.registerPlugin(ScrollTrigger);
@@ -113,9 +177,14 @@ const circlezoom1 = gsap.timeline({
       let progress = self.progress; // Progress of scroll (0 to 1)
       if (progress >= 0.8) { 
         document.querySelector(".on_instagram").classList.add("active");
+      }else{
+        document.querySelector(".on_instagram").classList.remove("active");
       }
+
       if (progress >= 0.99) { 
         document.querySelector(".on_instagram").classList.add("open");
+      }else{
+        document.querySelector(".on_instagram").classList.remove("open");
       }
     }
   }
@@ -154,3 +223,22 @@ circlezoom2.to(".social_media .bg", {
   borderRadius: "100px", // Keeps the border-radius
   ease: "none",
 });
+
+
+let scrollDistance4 = 600;
+const circlezoom4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".banchmarketing",
+    scrub: 0.5, // Smooth scrolling animation
+    start: "top 100%", // Start when .on_instagram reaches 60% of the viewport
+    end: `+=${scrollDistance4}`, // Animation ends after scrollDistance1
+    pin: false, // No pinning
+  }
+});
+
+circlezoom4.to(".banchmarketing h2", {
+  x: 0, // Moves up by 150px
+  ease: "none",
+});
+
+}
