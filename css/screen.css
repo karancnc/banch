@@ -375,7 +375,11 @@ header ul li a:hover{font-weight: 700;}
 .banchmarketing h2{color: #3E4959;letter-spacing: 2px;font-size: 168px;line-height: 150px;font-family: 'Owners TRIAL Wide';font-weight: 500;text-transform: uppercase;opacity: 0.3;transform: translateX(100%);}
 
 .social_media{border-radius: 90px 90px 0 0; position: relative; z-index:2; margin-top: -70px; padding: 120px 0 421px; background-color:var(--white);}
-.social_media .bg{    transform: scale3d(0.13, 0.16, 1) ; border-radius: 100px; top: -50px; margin-left: -2%;z-index: 3;}
+/* .social_media .bg{transform: scale3d(0.13, 0.16, 1) ; border-radius: 100px; top: -50px; margin-left: -2%;z-index: 3;width:80%;height: 80%;} */
+
+.social_media .bg{transform: scale(1) !important; border-radius: 20px; top: -250px;  z-index: 3; width: 100%; height: 100%; margin: auto; margin: 0 auto; max-width: 11%; margin: auto; right: 0; left: 0; display: block; max-height: 210px; bottom: 0;}
+
+
 .social_media .left_col{width: 52%;}
 .social_media .right_col{    width: 43%; padding-top: 162px; padding-right: 15px;}
 .social_media h2{font-size: 90px;line-height: 99px;}
@@ -411,9 +415,9 @@ footer .rr_footer img{display: block; margin-bottom: -54px;    width: min-conten
 
 footer .rr_footer { width: auto; text-align: center; margin-top: 70px; margin-left: 0;padding: 0px 58px; }
 footer .rr_footer img { display: block; margin-bottom: 0; width: min-content; }
-footer .rr_footer { transform: translateY(100%); transition: 0.5s ease all;transition-delay: 0.5s; }
-footer.come-in .rr_footer { transform: translateY(0);}
-footer .bg{transform: scale(0); transform-origin: bottom center; transition: 0.7s ease all;transition-delay: 0.6s;}
+footer .rr_footer { transform: translateY(50%); transition: 0.2s linear all;opacity: 0;}
+footer .rr_footer.come-in  { transform: translateY(0);opacity: 1;}
+footer .bg{transform: scale(0); transform-origin: bottom center; transition: 0.7s ease all;transition-delay: 0.5s;}
 footer.come-in .bg{transform: scale(1);}
 
 footer .bottom_footer .wrapper{ padding: 29px 0;}

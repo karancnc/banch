@@ -60,6 +60,12 @@
   .affordable h2 { font-size: 60px; }
   .banchmarketing h2 { font-size: 112px; }
   .title h2 { font-size: 40px; line-height: 42px; }
+  footer .rr_footer { padding: 0px 10px; }
+  .social_media .bg { top: -170px; }
+
+
+  
+
 }
 @media only screen and (max-width:1279px){
   .wrapper {padding: 0px 40px;}
@@ -211,7 +217,7 @@ header .navbar-toggler {display: none;}
   #customers-testimonials {flex-wrap: wrap;}
   #customers-testimonials .item { width: 100% !important; }
   #customers-testimonials .item:not(:last-child){margin-bottom: 20px;}
-  .social_media { padding: 40px 0 40px !important; border-radius: 20px 20px 0px 0px; }
+  .social_media { padding:0px 0 40px !important; border-radius: 20px 20px 0px 0px; }
   .social_media .left_col { width: 100%; }
   .banchmarketing h2 { font-size: 35px; }
 
@@ -232,6 +238,8 @@ header .navbar-toggler {display: none;}
   footer .bottom_footer .wrapper { padding: 15px 10px; }
   footer .bottom_footer ul li { padding: 0px 10px; margin-bottom: 10px; }
   footer .bottom_footer ul li:first-child{padding-left: 0px;}
-
+  footer .rr_footer{ margin-top: 20px; }
+  .banchmarketing h2 { transform: translateX(0); }
+  .social_media .bg { transform: scale3d(1, 1, 1); top: 0; margin-left: 0; z-index: 3; position: relative; height: 350px; border-radius: 10px; margin-bottom: 30px;        max-width: 100%; max-height: 100%; }
 
 }

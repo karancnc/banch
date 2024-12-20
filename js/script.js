@@ -37,6 +37,10 @@ jQuery(document).ready(function($){
     $(this).toggleClass('active');
     $('header nav').toggleClass('active');
   });
+  $('header ul li a').click(function(){
+    $('header .navbar-toggler').removeClass('active');
+    $('header nav').removeClass('active');
+  });
 
     /* megnify */
     $('[data-pop="megnify"]').each(function(){
@@ -77,7 +81,7 @@ jQuery(document).ready(function($){
   };
 })(jQuery);
 var win = $(window);
-var allMods = $(".animation_sec,footer");
+var allMods = $(".animation_sec,.rr_footer,footer");
 win.scroll(function(event) {
   allMods.each(function(i, el) {
       var el = $(el);
@@ -217,9 +221,11 @@ const circlezoom2 = gsap.timeline({
 
 // Animate scale while maintaining position values
 circlezoom2.to(".social_media .bg", {
-  y: 0, // Maintains the top position at -50px
-  marginLeft: "0", // Maintains margin-left
-  scale: 0.8, // Scale to 1
+  //y: 0, // Maintains the top position at -50px
+  //marginLeft: "0", // Maintains margin-left
+  //scale: 0.8, // Scale to 1
+  maxWidth:"70%",
+  maxHeight:"70%",
   borderRadius: "100px", // Keeps the border-radius
   ease: "none",
 });
