@@ -191,18 +191,27 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .btn_dark::before{background-color:#3E4959;}
 
 
-
-
 header{position: fixed;top: 0;width: 100%;padding:58px 0;z-index: 999;transition: 0.2s ease all;}
 header.fixed{background-color: #404959;box-shadow: 0px 0px 10px #fbf5e314; padding: 20px 0;}
 header.hidden { transform: translateY(-102%); }
 
-header ul{list-style: none;}
-header ul li{margin: 0px 39px;}
-header ul li a{text-align: center;}
-header ul li a.active,
-header ul li a:hover{font-weight: 700;}
+header nav>ul{list-style: none;}
+header nav>ul>li{margin: 0px 39px;position: relative;}
+header nav>ul>li::after{content: '';position: absolute;top: 100%;height: 12px;width: 100%;left: 0;}
+header nav>ul>li>a{text-align: center;}
+header nav>ul>li>a.active,
+header nav>ul>li>a:hover{font-weight: 700;}
 
+header nav>ul>li>ul{list-style: none; position: absolute; top: calc(100% + 10px); padding: 23px 14px; border-radius: 20px; width: 256px; opacity: 0; pointer-events:none; transition: 0.2s ease all; background-color: #D6D2C5; left: 50%; transform: translate3d(-50%, 0, 0); }
+header nav>ul>li>ul::after { content: ''; position: absolute; top: -10px; right:50px; width:23px; height:10px;background-image: url(../images/arrow.png);background-repeat: no-repeat;background-size: 100% 100%;}
+header nav>ul>li:hover>ul{opacity: 1;pointer-events: all;}
+header nav>ul>li>ul>li{width: 100%;}
+header nav>ul>li>ul>li>a{color: #404959;width: 100% !important;position: relative;padding: 0 25px;line-height: 45px;border-radius: 50px;}
+header nav>ul>li>ul>li>a:hover{background-color: #FBF5E3;}
+
+header nav>ul>li span { width: 12px; height: 3px; background-color: #fbf5e3; display: inline-block; position: absolute; top: 16px; right: -25px;cursor: pointer;}
+header nav>ul>li span::after { content: ''; position: absolute; top: -4.5px; width: 3px; height: 12px; background-color: #fbf5e3; left: 4.8px;transition: 0.2s ease all;}
+header nav>ul>li:hover span::after{opacity: 0;}
 
 .banner{position: relative;background-image: url(../images/banner_bg.jpg);background-repeat: no-repeat;background-size: 100% 100%;min-height: 1600px;padding-top: 211px;}
 .banner .wrapper{position: relative;}
@@ -224,6 +233,7 @@ header ul li a:hover{font-weight: 700;}
 
 .banner_image{height: 905px;position: relative;width: 100%; max-height: 905px;margin-top: -300px;}
 .banner_image .bg { border-radius:450px; position: absolute; left: 0; top:12%; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; transform: scale(0.3); transform-origin: left top;transform: scale3d(0.47, 0.38, 1);overflow: hidden; }
+.banner_image .bg video{    width: 100%; height: 100%; object-fit: cover;}
 /* .banner_image .bg { border-radius: 110px; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; transform: scale(0.3); transform-origin: left top;transform: scale3d(0.47, 0.38, 1); } */
 
 .marquee_plateform {padding: 85px 0 0; }

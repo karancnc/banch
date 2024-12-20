@@ -50,7 +50,7 @@
   .wrapper { max-width:1200px; }
   .brand{max-width: 130px;}
   header { padding: 30px 0; }
-  header ul li { margin: 0px 25px; }
+  header nav>ul>li { margin: 0px 25px; }
   .banner { padding-top: 170px; }
   h1 { font-size: 90px; line-height: 1.3; }
   .banner .circle { top: 0; max-width: 220px; }
@@ -64,7 +64,7 @@
   .social_media .bg { top: -170px; }
 
 
-  
+
 
 }
 @media only screen and (max-width:1279px){
@@ -121,7 +121,7 @@
   a { font-size: 16px; }
   h1 { font-size: 52px; line-height: 1.3; }
   .brand { max-width: 100px; }
-  header ul li { margin: 0px 15px; }
+  header nav>ul>li { margin: 0px 15px; }
   .banner .text { max-width: 336px; }
   .banner .circle { max-width: 160px; }
   .banner_image { height: 400px; max-height: 400px; margin-top: -300px; }
@@ -153,6 +153,8 @@
   footer .bottom_footer ul li { padding: 0px 22px; margin-bottom: 10px; }
   footer .bottom_footer .wrapper { padding: 20px 30px; }
 
+  
+
 }
 header .navbar-toggler {display: none;}
 @media only screen and (max-width:767px){
@@ -170,7 +172,17 @@ header .navbar-toggler {display: none;}
   header,header.fixed { padding: 15px 0; }
   header .btn{display: none;}
   header nav{position: fixed;top: 0;width: 100%;height: 100%;background-color: var(--cool-Gray);z-index: 99;left: 0;transform: translateX(-100%);transition: 0.2s linear all;        display: block; padding-top: 70px;}
-  header ul li { margin: 0px 15px; width: 100%; text-align: center; }
+ 
+  header nav>ul>li { margin: 0px 15px; width: 100%; border-bottom: 1px solid #fbf5e3; padding: 5px 0; }
+  header nav>ul>li span { top: 19px; right: 15px; }
+  header nav>ul>li span::after { top: -4px; }
+  header nav>ul>li>ul { position: relative; top: 0; padding: 10px 0px; border-radius: 20px; width: 100%; opacity:1; pointer-events: all; transition: none; background-color: transparent; left: 0; transform: translate3d(0, 0, 0);display: none; }
+  header nav>ul>li>ul>li>a { color: #fbf5e3; padding: 0 20px; line-height: 40px; }
+  header nav>ul>li>ul>li>a::after{content: '';position: absolute;left: 0;top: 0;width: 10px;height: 2px;background-color: #fbf5e3;bottom: 0;margin: auto;}
+  header nav>ul>li>ul::after{display: none;}
+  header nav>ul>li:hover span::after{opacity: 1;}
+  header nav>ul>li span.open::after { opacity: 0; }
+
   header nav.active{transform: translateX(0);}
   .banner {    padding-top: 220px;}
   h1 { font-size: 35px; line-height: 1.3; }

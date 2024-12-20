@@ -9,6 +9,7 @@ jQuery(window).on('load', function() {
 
 jQuery(document).ready(function($){
 
+  
   $('header ul li a,footer .bottom_footer ul li a').each(function() {
     var _this = $(this); // Store the jQuery object
     var currentWidth = _this.width(); // Get the width of the element
@@ -33,14 +34,25 @@ jQuery(document).ready(function($){
         lastScrollTop = currentScroll; // Update the last scroll position
       });
 
+$('header ul li.menu-item-has-children>a').after('<span></span>');
+  if($(window).width() < 767 ){
+    $('header nav>ul>li span').click(function(){
+      $(this).toggleClass('open');
+      $(this).next().slideToggle();
+    });
+  }
+
   $('header .navbar-toggler').click(function(){
     $(this).toggleClass('active');
     $('header nav').toggleClass('active');
   });
+  
   $('header ul li a').click(function(){
     $('header .navbar-toggler').removeClass('active');
     $('header nav').removeClass('active');
   });
+
+
 
     /* megnify */
     $('[data-pop="megnify"]').each(function(){
