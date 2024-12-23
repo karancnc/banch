@@ -177,6 +177,7 @@ circlezoom.to(".banner_image .bg", {
 /* banner aniamtion end  */
 
 /* Three blog */
+if ($('.on_instagram').length > 0) {
 gsap.registerPlugin(ScrollTrigger);
 let scrollDistance1 = 300;
 
@@ -211,9 +212,10 @@ circlezoom1.to(".on_instagram", {
   ease: "none",
 });
 /* Three blog end */
-
+}
 
 /* Three blog */
+if ($('.social_media').length > 0) {
 gsap.registerPlugin(ScrollTrigger);
 
 let scrollDistance2 = 600;
@@ -260,3 +262,362 @@ circlezoom4.to(".banchmarketing h2", {
 });
 
 }
+
+
+
+
+
+
+}
+
+
+// Ensure the DOM is fully loaded
+// document.addEventListener("DOMContentLoaded", function () {
+//   if ($('.profitable_campaigns').length > 0) {
+
+//     gsap.registerPlugin(ScrollTrigger);
+
+//     const scrollDistance11 = 1000;
+
+//     // Create a timeline for sequential animations
+//     const animationTimeline = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".profitable_campaigns", // Trigger animation when `.profitable_campaigns` enters the viewport
+//         start: "top top", // Start when the section reaches 50% of the viewport
+//         end: `+=${scrollDistance11}`, // Animation duration
+//         scrub: true, // Smooth scrolling animations
+//         pin: true, // Pin the section during animations
+//         markers: true, // Enable debugging markers (remove in production)
+//       },
+//     });
+
+//     // Sequential animations for the `.col` elements
+//     animationTimeline
+//       .to(".profitable_campaigns .col1", { 
+//         top: 0, 
+//         ease: "power1.out", 
+//         duration: 0.5, 
+//         onComplete: () => {
+//           document.querySelector(".profitable_campaigns .col1").classList.add("active");
+//         },
+//       }) // Animate col1
+//       .to(
+//         ".profitable_campaigns .col2", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             document.querySelector(".profitable_campaigns .col2").classList.add("active");
+//           },
+//         },
+//         "+=0.5" // Slight delay for sequential animations
+//       ) 
+//       .to(
+//         ".profitable_campaigns .col3", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             document.querySelector(".profitable_campaigns .col3").classList.add("active");
+//           },
+//         },
+//         "+=0.5"
+//       );
+
+//     // Expand animations when elements become "open"
+//     document.querySelectorAll(".profitable_campaigns .col").forEach((el) => {
+//       el.addEventListener("click", () => {
+//         el.classList.add("open");
+//       });
+//     });
+
+//   }
+// });
+
+
+// Ensure the DOM is fully loaded
+// document.addEventListener("DOMContentLoaded", function () {
+//   if ($('.profitable_campaigns').length > 0) {
+
+//     gsap.registerPlugin(ScrollTrigger);
+
+//     const scrollDistance11 = 1000;
+
+//     // Create a timeline for sequential animations
+//     const animationTimeline = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".profitable_campaigns", // Trigger animation when `.profitable_campaigns` enters the viewport
+//         start: "top top", // Start when the section reaches the top of the viewport
+//         end: `+=${scrollDistance11}`, // Animation duration
+//         scrub: true, // Smooth scrolling animations
+//         pin: true, // Pin the section during animations
+//         markers: true, // Enable debugging markers (remove in production)
+//       },
+//     });
+
+//     // Sequential animations for the `.col` elements
+//     animationTimeline
+//       .to(".profitable_campaigns .col1", { 
+//         top: 0, 
+//         ease: "power1.out", 
+//         duration: 0.5, 
+//         onComplete: () => {
+//           const col1 = document.querySelector(".profitable_campaigns .col1");
+//           col1.classList.add("active");
+          
+//           // Add `open` class after a slight delay
+//           setTimeout(() => {
+//             col1.classList.add("open");
+//           }, 200); // Adjust delay as needed
+//         },
+//       }) // Animate col1
+//       .to(
+//         ".profitable_campaigns .col2", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             const col2 = document.querySelector(".profitable_campaigns .col2");
+//             col2.classList.add("active");
+
+//             // Add `open` class after a slight delay
+//             setTimeout(() => {
+//               col2.classList.add("open");
+//             }, 200); // Adjust delay as needed
+//           },
+//         },
+//         "+=0.5" // Slight delay for sequential animations
+//       ) 
+//       .to(
+//         ".profitable_campaigns .col3", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             const col3 = document.querySelector(".profitable_campaigns .col3");
+//             col3.classList.add("active");
+
+//             // Add `open` class after a slight delay
+//             setTimeout(() => {
+//               col3.classList.add("open");
+//             }, 200); // Adjust delay as needed
+//           },
+//         },
+//         "+=0.5"
+//       );
+//   }
+// });
+
+// Ensure the DOM is fully loaded
+// document.addEventListener("DOMContentLoaded", function () {
+//   if ($('.profitable_campaigns').length > 0) {
+
+//     gsap.registerPlugin(ScrollTrigger);
+
+//     const scrollDistance11 = 1000;
+
+//     // Create a timeline for sequential animations
+//     const animationTimeline = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".profitable_campaigns", // Trigger animation when `.profitable_campaigns` enters the viewport
+//         start: "top top", // Start when the section reaches the top of the viewport
+//         end: `+=${scrollDistance11}`, // Animation duration
+//         scrub: true, // Smooth scrolling animations
+//         pin: true, // Pin the section during animations
+//         markers: true, // Enable debugging markers (remove in production)
+//       },
+//     });
+
+//     // Sequential animations for the `.col` elements
+//     animationTimeline
+//       .to(".profitable_campaigns .col1", { 
+//         top: 0, 
+//         ease: "power1.out", 
+//         duration: 0.5, 
+//         onComplete: () => {
+//           const col1 = document.querySelector(".profitable_campaigns .col1");
+//           col1.classList.add("active");
+
+//           // Add `open` class after a slight delay
+//           setTimeout(() => {
+//             col1.classList.add("open");
+//           }, 200);
+//         },
+//         onReverseComplete: () => {
+//           { top: "500px", duration: 0.5 }
+//           const col1 = document.querySelector(".profitable_campaigns .col1");
+//           col1.classList.remove("open");
+
+//           setTimeout(() => {
+//             col1.classList.remove("active");
+//           }, 200);
+//         },
+//       })
+//       .to(
+//         ".profitable_campaigns .col2", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             const col2 = document.querySelector(".profitable_campaigns .col2");
+//             col2.classList.add("active");
+
+//             setTimeout(() => {
+//               col2.classList.add("open");
+//             }, 200);
+//           },
+//           onReverseComplete: () => {
+//             { top: "500px", duration: 0.5 }
+//             const col2 = document.querySelector(".profitable_campaigns .col2");
+//             col2.classList.remove("open");
+
+//             setTimeout(() => {
+//               col2.classList.remove("active");
+//             }, 200);
+//           },
+//         },
+//         "+=0.5"
+//       )
+//       .to(
+//         ".profitable_campaigns .col3", 
+//         { 
+//           top: 0, 
+//           ease: "power1.out", 
+//           duration: 0.5, 
+//           onComplete: () => {
+//             const col3 = document.querySelector(".profitable_campaigns .col3");
+//             col3.classList.add("active");
+//             setTimeout(() => {
+//               col3.classList.add("open");
+//             }, 200);
+//           },
+//           onReverseComplete: () => {
+//             { top: "500px", duration: 0.5 }
+//             const col3 = document.querySelector(".profitable_campaigns .col3");
+//             col3.classList.remove("active");
+//             setTimeout(() => {
+//               col3.classList.remove("open");
+//             }, 200);
+//           },
+//         },
+//         "+=0.5"
+//       );
+//   }
+// });
+
+
+// Ensure the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  if ($('.profitable_campaigns').length > 0) {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const scrollDistance11 = 1000;
+
+    // Create a timeline for sequential animations
+    const animationTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".profitable_campaigns", // Trigger animation when `.profitable_campaigns` enters the viewport
+        start: "top top", // Start when the section reaches the top of the viewport
+        end: `+=${scrollDistance11}`, // Animation duration
+        scrub: true, // Smooth scrolling animations
+        pin: true, // Pin the section during animations
+        markers: true, // Enable debugging markers (remove in production)
+      },
+    });
+
+    // Sequential animations for the `.col` elements
+    animationTimeline
+      .to(".profitable_campaigns .col1", { 
+        top: 0, 
+        ease: "power1.out", 
+        duration: 0.5, 
+        onComplete: () => {
+          const col1 = document.querySelector(".profitable_campaigns .col1");
+          col1.classList.add("active");
+
+          // Add `open` class after a slight delay
+          setTimeout(() => {
+            col1.classList.add("open");
+          }, 200);
+        },
+        onReverseComplete: () => {
+          const col1 = document.querySelector(".profitable_campaigns .col1");
+
+          // Move back to `top: 500px` before removing classes
+          gsap.to(col1, {
+            top: "120%",
+            duration: 0.5,
+            onComplete: () => {
+              col1.classList.remove("open");
+              col1.classList.remove("active");
+            },
+          });
+        },
+      })
+      .to(
+        ".profitable_campaigns .col2", 
+        { 
+          top: 0, 
+          ease: "power1.out", 
+          duration: 0.5, 
+          onComplete: () => {
+            const col2 = document.querySelector(".profitable_campaigns .col2");
+            col2.classList.add("active");
+
+            setTimeout(() => {
+              col2.classList.add("open");
+            }, 200);
+          },
+          onReverseComplete: () => {
+            const col2 = document.querySelector(".profitable_campaigns .col2");
+
+            // Move back to `top: 500px` before removing classes
+            gsap.to(col2, {
+              top: "120%",
+              duration: 0.5,
+              onComplete: () => {
+                col2.classList.remove("open");
+                col2.classList.remove("active");
+              },
+            });
+          },
+        },
+        "+=0.5"
+      )
+      .to(
+        ".profitable_campaigns .col3", 
+        { 
+          top: 0, 
+          ease: "power1.out", 
+          duration: 0.5, 
+          onComplete: () => {
+            const col3 = document.querySelector(".profitable_campaigns .col3");
+            col3.classList.add("active");
+            setTimeout(() => {
+              col3.classList.add("open");
+            }, 200);
+          },
+          onReverseComplete: () => {
+            const col3 = document.querySelector(".profitable_campaigns .col3");
+
+            // Move back to `top: 500px` before removing classes
+            gsap.to(col3, {
+              top: "120%",
+              duration: 0.5,
+              onComplete: () => {
+                col3.classList.remove("open");
+                col3.classList.remove("active");
+              },
+            });
+          },
+        },
+        "+=0.5"
+      );
+  }
+});

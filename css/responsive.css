@@ -248,7 +248,8 @@ header .navbar-toggler {display: none;}
   footer .top_footer .let_blog { order: 3; width: 100%; }
   footer .top_footer .let_blog .lets_talk { margin-bottom: 25.94px; margin: 0 auto; margin-bottom: 20px;  }
   footer .bottom_footer .wrapper { padding: 15px 10px; }
-  footer .bottom_footer ul li { padding: 0px 10px; margin-bottom: 10px; }
+  footer .bottom_footer ul li { padding: 0px 7px; margin-bottom: 10px; }
+  footer .bottom_footer ul li:not(:last-child):after { width: 2px; right: 2.5px; }
   footer .bottom_footer ul li:first-child{padding-left: 0px;}
   footer .rr_footer{ margin-top: 20px; }
   .banchmarketing h2 { transform: translateX(0); }
