@@ -469,18 +469,17 @@ footer .bottom_footer ul li a:hover{font-weight: 800;}
 .service_link .inner a img{margin-right: 16px;}
 .service_link .inner a:not(:last-child){margin-right: 60px;}
 
-.profitable_campaigns{padding:394px 0 587px;background-color: var(--off-white);margin-top: -80px;}
+.profitable_campaigns{padding:378px 0 100px;background-color: var(--off-white);margin-top: -80px;pointer-events: none;}
 .profitable_campaigns .left_col{max-width: 998px;}
-.profitable_campaigns h2{font-size: 90px;line-height: 99px;margin-bottom: 33px;}
-.profitable_campaigns p{max-width: 900px;}
+.profitable_campaigns .left_col h2{font-size: 90px;line-height: 99px;margin-bottom: 33px;}
+.profitable_campaigns .left_col p{max-width: 884px;}
 .profitable_campaigns .animation_col{width: 521px;height: 739px;position: relative;margin-top: -161px;}
-.profitable_campaigns .animation_col .col{position: absolute;left: 0;top:100%;width: 60px;height: 60px;border-radius: 50%;right: 0;bottom: 0;margin: auto;transform-origin: center;transition: 0.4s ease all;opacity: 1;overflow: hidden;}
+.profitable_campaigns .animation_col .col{position: absolute;left: 0;top:150%;width: 60px;height: 60px;border-radius: 50%;right: 0;bottom: 0;margin: auto;transform-origin: center;transition: 0.4s ease all;opacity: 1;overflow: hidden;}
 .profitable_campaigns .animation_col .col::after{content: '';position: absolute;left: 0;top: 0;width: 100%;height: 100%;transition: 0.2s ease all;}
+
 .profitable_campaigns .animation_col .col1::after{background-color:#404959;}
 .profitable_campaigns .animation_col .col2::after{background-color: #404959;opacity: 0.9;}
 .profitable_campaigns .animation_col .col3::after{background-color:#404959;opacity: 0.8;}
-
-
 .profitable_campaigns .animation_col .col1{top:0 !important; transform: rotate(5deg);}
 .profitable_campaigns .animation_col .col2{transform: rotate(-5deg);}
 .profitable_campaigns .animation_col .col3{}
@@ -488,3 +487,60 @@ footer .bottom_footer ul li a:hover{font-weight: 800;}
 .profitable_campaigns .animation_col .col.active{top: 0 ;}
 .profitable_campaigns .animation_col .col.active:after{opacity: 0;}
 .profitable_campaigns .animation_col .col.open{width: 100%;height: 100%;border-radius: 10px;}
+.profitable_campaigns .wrapper:first-child{margin-bottom: 130px;}
+
+.ads_link{list-style: none;pointer-events: all;}
+.ads_link li+li{margin-left: -35px;}
+.ads_link li a{font-size: 30px;line-height: 87px;border: 1.5px solid #3E4959;border-radius: 50px;background-color: var(--off-white);    color: #3E4959; font-family: 'Owners TRIAL Wide';padding: 0px 40.34px;}
+.ads_link li a:hover{background-color:#3E4959;color: var(--white);}
+.animations_title {margin-top: 87px;text-align: center;overflow: hidden;text-align: center;}
+.animations_title h2{line-height: 219px;font-size: 312px;font-family: 'Owners TRIAL Wide'; font-weight: 500; opacity: 0.3;white-space: nowrap;}
+
+.our_goal{border-radius: 90px 90px 0px 0px; position: relative; z-index: 1; margin-top: -203px; background-color: var(--white);}
+.our_goal .wrapper{    padding: 155px 0 120px;border-bottom: 1px solid #3E4959; }
+.our_goal h2{font-size: 90px;line-height: 99px;max-width: 1500px;margin-bottom: 71px;}
+.our_goal .inner{}
+.our_goal .inner .left_col{width: 700px;}
+.our_goal .inner .right_col{width: 843px;}
+.our_goal .inner label{display: block;font-size: 21px;line-height: 42px;font-family: var(--Poppins);font-weight: 500;margin-bottom: 95px;}
+.our_goal .inner .img{height: 384px;border-radius: 28px;overflow: hidden;transform: rotate(5.9deg);position: relative;}
+.our_goal .inner .img img{    display: block; max-width: 100%; -o-object-fit: cover; object-fit: cover; position: absolute; top: 50%; left: 50%; min-height: 100%; min-width: 100%; transform: translate(-50%, -50%);}
+.our_goal .inner .right_col{list-style: none;}
+.our_goal .inner .right_col li{overflow: hidden;padding: 45px 0;border-bottom:1px solid #3E4959;}
+.our_goal .inner .right_col li h3{color: #3E4959;font-size: 60px;line-height: 45px;text-transform: uppercase; font-family: 'Owners TRIAL Wide';font-weight: 500;cursor: pointer;transform: translateX(-115px);transition: 0.2s ease all;transition-delay: 0.15s;}
+.our_goal .inner .right_col li h3.active{transform: translateX(0);}
+.our_goal .inner .right_col li h3 span{position: relative;margin-right: 48px;}
+.our_goal .inner .right_col li h3 span::after{    content: ''; position: absolute; width: 20px; height: 54px; background-color: #D6D2C5; left: 0; right: 0; margin: auto; transform: skew(-10deg, 10deg); z-index: -1; top: 0; bottom: 0;}
+.our_goal .inner .right_col li .text{margin-top: 45px;display: none;}
+.our_goal .inner .right_col li p{line-height: 42px;}
+.our_goal .btn_col{display: block;text-align: center;margin-top: 50px;}
+
+.ads_comman_section{padding: 102px 0;position: relative;}
+.ads_comman_section .paid_img{position: absolute;left: 0;top: 322px;}
+.ads_comman_section h2{font-size: 90px;line-height: 99px;margin-bottom: 34px;}
+.ads_comman_section .col{max-width: 1116px;margin: 0 auto;margin-right: 0;}
+.ads_comman_section .col p{line-height: 42px;margin-bottom: 10px;}
+.ads_comman_section .colin:first-child{margin-bottom: 80px;}
+.ads_comman_section .btn_col{display: block;text-align: center;margin-top: 50px;}
+
+.paid_ads_service{background-color: var(--white);border-radius: 90px 90px 0px 0px;margin-top: -164px;position: relative;z-index: 2;}
+.paid_ads_service .wrapper{padding: 120px 0;border-bottom:1px solid #3E4959;}
+.paid_ads_service h2{font-size: 90px;line-height: 99px;max-width: 1500px;margin-bottom: 34px;}
+.paid_ads_service p{line-height: 42px;}
+.paid_ads_service .text_inner{border-bottom:1px solid #3E4959;margin-bottom: 120px;padding-bottom: 120px;}
+
+.email_marketing_service.email_marketing {padding: 120px 0 0;}
+.email_marketing_service.email_marketing .wrapper{padding-bottom: 120px;border-bottom:1px solid #3E4959;}
+
+#campaigns_growth.profitable_campaigns,
+#ecommerce.profitable_campaigns,
+#seo.profitable_campaigns{margin-top: 0px;border-radius: 90px 90px 0px 0px;padding:280px 0 100px;}
+#campaigns_growth .animations_title h2{font-size: 236px;line-height: 165px;}
+
+
+#ecommerce.profitable_campaigns .left_col { max-width:890px; }
+#ecommerce .animations_title h2 { font-size: 298px; }
+#seo .animations_title h2 { font-size: 360px;line-height: 272px;}
+
+.ads_comman_section.ads_comman_section_curve{border-radius: 90px 90px 0 0; margin-top: -200px; background-color:var(--white)}
+.extra_padding{padding:159px 0px;}
