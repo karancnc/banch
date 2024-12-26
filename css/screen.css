@@ -494,9 +494,9 @@ footer .bottom_footer ul li a:hover{font-weight: 800;}
 .ads_link li a{font-size: 30px;line-height: 87px;border: 1.5px solid #3E4959;border-radius: 50px;background-color: var(--off-white);    color: #3E4959; font-family: 'Owners TRIAL Wide';padding: 0px 40.34px;}
 .ads_link li a:hover{background-color:#3E4959;color: var(--white);}
 .animations_title {margin-top: 87px;text-align: center;overflow: hidden;text-align: center;}
-.animations_title h2{line-height: 219px;font-size: 312px;font-family: 'Owners TRIAL Wide'; font-weight: 500; opacity: 0.3;white-space: nowrap;}
+.animations_title h2{line-height: 118px;font-size: 168px;font-family: 'Owners TRIAL Wide'; font-weight: 500; opacity: 0.3;white-space: nowrap;}
 
-.our_goal{border-radius: 90px 90px 0px 0px; position: relative; z-index: 1; margin-top: -203px; background-color: var(--white);}
+.our_goal{border-radius: 90px 90px 0px 0px; position: relative; z-index: 1; margin-top: -144px; background-color: var(--white);}
 .our_goal .wrapper{    padding: 155px 0 120px;border-bottom: 1px solid #3E4959; }
 .our_goal h2{font-size: 90px;line-height: 99px;max-width: 1500px;margin-bottom: 71px;}
 .our_goal .inner{}
@@ -523,7 +523,7 @@ footer .bottom_footer ul li a:hover{font-weight: 800;}
 .ads_comman_section .colin:first-child{margin-bottom: 80px;}
 .ads_comman_section .btn_col{display: block;text-align: center;margin-top: 50px;}
 
-.paid_ads_service{background-color: var(--white);border-radius: 90px 90px 0px 0px;margin-top: -164px;position: relative;z-index: 2;}
+.paid_ads_service{background-color: var(--white);border-radius: 90px 90px 0px 0px;margin-top: -144px;position: relative;z-index: 2;}
 .paid_ads_service .wrapper{padding: 120px 0;border-bottom:1px solid #3E4959;}
 .paid_ads_service h2{font-size: 90px;line-height: 99px;max-width: 1500px;margin-bottom: 34px;}
 .paid_ads_service p{line-height: 42px;}
@@ -535,12 +535,24 @@ footer .bottom_footer ul li a:hover{font-weight: 800;}
 #campaigns_growth.profitable_campaigns,
 #ecommerce.profitable_campaigns,
 #seo.profitable_campaigns{margin-top: 0px;border-radius: 90px 90px 0px 0px;padding:280px 0 100px;}
-#campaigns_growth .animations_title h2{font-size: 236px;line-height: 165px;}
-
 
 #ecommerce.profitable_campaigns .left_col { max-width:890px; }
-#ecommerce .animations_title h2 { font-size: 298px; }
-#seo .animations_title h2 { font-size: 360px;line-height: 272px;}
-
-.ads_comman_section.ads_comman_section_curve{border-radius: 90px 90px 0 0; margin-top: -200px; background-color:var(--white)}
+.ads_comman_section.ads_comman_section_curve{border-radius: 90px 90px 0 0; margin-top: -148px; background-color:var(--white)}
 .extra_padding{padding:159px 0px;}
+footer.innerpage_foorter { padding-top: 120px; margin-top: 0; }
+.animations_title h2{line-height: 126px;}
+.other_services{}
+.other_services .wrapper{padding: 105px 0 140px;border-top: 1px solid #3E4959;}
+.other_services h2{font-size: 90px;line-height: 99px;margin-bottom: 100px;}
+.other_services .colin{width: 30.825%;height: 567px;background-color: var(--off-white);border-radius: 15px;padding: 40px 40px 50px;    display: flex ; flex-direction: column; align-items: flex-start; justify-content: space-between;position: relative;transition: 0.2s ease all;transform-origin: center;}
+.other_services .colin>span{font-size: 60px;line-height: 79px;font-weight: 500;font-family: 'Owners TRIAL Wide';color: #3E4959;}
+.other_services .colin .bg{background-color: #3E4959;border-radius: 15px;overflow: hidden;padding: 35px 48px;opacity: 0;transition: 0.2s ease all;}
+.other_services .colin .img{left: 0;right: 0;width: calc(100% - 98px);margin: 0 auto;bottom: 0;position: absolute;}
+.other_services .colin .img img{display: block;}
+.other_services .colin .bg>span{display: flex ; align-items: center; width: 100%; color: var(--white); font-size: 40px;font-weight: 500;font-family: 'Owners TRIAL Wide';}
+.other_services .colin .bg>span img{filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(103%) contrast(102%);max-width:42px;margin-right: 15px;}
+.other_services .colin:hover {transform: scale(1.1);box-shadow: 0px 4px 34px #00000079;}
+.other_services .colin:hover .bg{opacity: 1;}
+
+#profitable_campaigns_paid_ads{border-radius: 90px 90px 0px 0px;margin-top: -80px;position: relative;padding-top: 284px;}
+.inner_banner_small{padding: 285px 0 247px;}
